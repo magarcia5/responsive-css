@@ -1,6 +1,46 @@
-.menu {
+.menu-container {
     height: 100px;
     width: 100%;
+    font-family: Verdana, Geneva, sans-serif;
+    letter-spacing: 0.2em;
+    position: relative;
+
+    .menu {
+        width: 100%;
+        margin-bottom: 15px;
+        position: absolute;
+        bottom: 0;
+
+        .menu-item {
+            display: inline;
+            padding: 15px;
+            font-size: 0.9em;
+        }
+
+        .menu-item:hover {
+            background-color: #333;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .menu-item:hover .dropdown {
+            display: block;
+        }
+
+        .dropdown {
+            display: none;
+            height: 300px;
+            width: 100%;
+            color: #ddd;
+            background-color: #333;
+            top: 32px;
+            position: absolute;
+
+            .dropdown-content {
+                padding: 20px;
+            }
+        }
+    }
 }
 
 .image-content {
