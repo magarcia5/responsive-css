@@ -36,6 +36,7 @@
             background-color: #333;
             top: 32px;
             position: absolute;
+            z-index: 1;
 
             .dropdown-content {
                 padding: 20px;
@@ -60,9 +61,13 @@
 
 .slideshow {
     position: relative;
-    height: 75%;
+    height: 85%;
     width: 100%;
-    background-color: #eee;
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
 
     img:nth-child(3) {
         position: absolute;
@@ -86,13 +91,21 @@
     }
 }
 
-.image-content {
+.text-content {
+    .words {
+        width: 500px;
+        float: left;
+        margin-left: 10%;
+        margin-top: 140px;
+        font-family: Verdana, Geneva, sans-serif;
+        line-height: 25px;
+    }
+
+    .img-medium {
+
+    }
 }
 
-.text-content {
-    height: 30%;
-    width: 100%;
-}
 
 .thumbnails-container {
     height: 50%;
