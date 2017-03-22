@@ -44,10 +44,49 @@
     }
 }
 
-.image-content {
+/*
+    Animation for the slideshow. Only executes once.
+    TODO: have the animation repeat
+*/
+@keyframes slide-right {
+	from { right: 0 }
+    to { right: 110% }
+}
+
+@-webkit-keyframes slide-right {
+	from { right: 0 }
+    to { right: 110% }
+}
+
+.slideshow {
+    position: relative;
     height: 75%;
     width: 100%;
     background-color: #eee;
+
+    img:nth-child(3) {
+        position: absolute;
+        -webkit-animation: slide-right 2s 5s infinite;
+        animation: slide-right 2s 5s;
+        animation-fill-mode: forwards;
+    }
+
+    img:nth-child(2) {
+        position: absolute;
+        -webkit-animation: slide-right 2s 10s infinite;
+        animation: slide-right 2s 10s;
+        animation-fill-mode: forwards;
+    }
+
+    img:nth-child(1) {
+        position: absolute;
+        -webkit-animation: slide-right 2s 15s infinite;
+        animation: slide-right 2s 15s;
+        animation-fill-mode: forwards;
+    }
+}
+
+.image-content {
 }
 
 .text-content {
