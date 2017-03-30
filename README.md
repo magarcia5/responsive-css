@@ -1,6 +1,6 @@
 ### Demo Website ###
 
-An exercise in responsive CSS using LESS.
+An exercise in responsive CSS3 using LESS.
 
 ### Dependencies ###
 
@@ -15,4 +15,13 @@ $ node server.js
 
 ```
 
-You can visit the site at http://127.0.0.1:8081/index.html.
+Visit the site at http://127.0.0.1:8081/index.html.
+
+### Features ###
+
+This site was implemented using only CSS3. Features include:
+
+ * image slideshow
+ * responsive menu bar
+ * menus for each tab
+ * responsive images and text
